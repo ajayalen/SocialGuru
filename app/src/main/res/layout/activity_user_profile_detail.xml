@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.socialnetwork.activities.UserProfileDetailActivity"
+    tools:ignore="Overdraw">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dp20">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="@dimen/dp100"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/activity_profile_iv"
+                        android:layout_width="@dimen/dp85"
+                        android:layout_height="@dimen/dp85"
+                        android:layout_gravity="center"
+                        android:src="@drawable/default_profile_image_holder" />
+
+                    <ImageView
+                        android:id="@+id/activity_profile_add_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="@dimen/dp1"
+                        android:src="@drawable/camera_icon" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/activity_profile_username_et"
+                            style="@style/editTextStyle"
+                            android:layout_width="0dp"
+                            android:layout_marginLeft="@dimen/dp2"
+                            android:layout_weight="1"
+                            android:hint="@string/user_name"
+                            android:inputType="text" />
+
+                        <ImageView
+                            android:id="@+id/username_accepted_iv"
+                            android:layout_width="@dimen/dp20"
+                            android:layout_height="@dimen/dp20"
+                            android:src="@drawable/accept"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <View
+                        style="@style/dividerView"
+                        android:layout_height="@dimen/dp1"
+                        android:layout_marginTop="@dimen/dp10" />
+
+                    <CheckBox
+                        android:id="@+id/activity_profile_privacy_checkbox"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp2"
+                        android:layout_marginTop="@dimen/dp1"
+                        android:button="@null"
+                        android:checked="false"
+                        android:background="@null"
+                        android:drawableRight="@drawable/privacy_setting_background_selector"
+                        android:text="@string/privacy_txt"
+                        android:textAppearance="@style/TextAppearance.Lato.Regular"
+                        android:textColor="@color/color_gray_dark"
+                        android:textSize="@dimen/text_size_15sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/activity_profile_name_et"
+                style="@style/editTextStyle"
+                android:layout_marginTop="@dimen/dp15"
+                android:drawableRight="@drawable/designation_icon"
+                android:hint="@string/name"
+                android:inputType="textCapWords"
+                android:maxLength="60"
+                android:paddingLeft="@dimen/dp2"
+                android:singleLine="true" />
+
+            <View
+                style="@style/dividerView"
+                android:layout_marginTop="@dimen/dp10" />
+
+            <EditText
+                android:id="@+id/activity_profile_age_et"
+                style="@style/editTextStyle"
+                android:layout_marginTop="@dimen/dp15"
+                android:singleLine="true"
+                android:drawableRight="@drawable/birthday_icon"
+                android:hint="@string/age"
+                android:inputType="number"
+                android:maxLength="3"
+                android:paddingLeft="@dimen/dp2" />
+
+            <View
+                style="@style/dividerView"
+                android:layout_marginTop="@dimen/dp10" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:gravity="center"
+                android:text="@string/gender"
+                android:textAppearance="@style/TextAppearance.Lato.Regular"
+                android:textColor="@color/color_gray_dark"
+                android:textSize="@dimen/text_size_16sp" />
+
+            <RadioGroup
+                android:id="@+id/activity_profile_gender_rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/male_rb"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:layout_weight="1"
+                    android:background="@drawable/gender_border_rectangle"
+                    android:button="@drawable/gender_border_rectangle"
+                    android:checked="false"
+                    android:drawablePadding="@dimen/dp10"
+                    android:drawableRight="@drawable/user_profile_male_icon"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/dp10"
+                    android:paddingRight="@dimen/dp20"
+                    android:paddingTop="@dimen/dp10"
+                    android:text="@string/male"
+                    android:textAppearance="@style/TextAppearance.Lato.Regular"
+                    android:textColor="@drawable/gender_text_color_selector"
+                    android:textSize="@dimen/text_size_16sp" />
+
+                <RadioButton
+                    android:id="@+id/female_rb"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:layout_weight="1"
+                    android:background="@drawable/gender_border_rectangle"
+                    android:button="@drawable/gender_border_rectangle"
+                    android:drawablePadding="@dimen/dp10"
+                    android:drawableRight="@drawable/user_profile_female_icon"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/dp10"
+                    android:paddingRight="@dimen/dp20"
+                    android:paddingTop="@dimen/dp10"
+                    android:text="@string/female"
+                    android:textAppearance="@style/TextAppearance.Lato.Regular"
+                    android:textColor="@drawable/gender_text_color_selector"
+                    android:textSize="@dimen/text_size_16sp" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/activity_profile_about_yourself_et"
+                style="@style/editTextStyle"
+                android:layout_marginTop="@dimen/dp20"
+                android:drawableRight="@drawable/about_icon"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:hint="@string/write_about_yourself"
+                android:maxLines="5"
+                android:paddingLeft="@dimen/dp2" />
+
+            <View
+                style="@style/dividerView"
+                android:layout_marginTop="@dimen/dp10" />
+
+            <EditText
+                android:id="@+id/activity_profile_hobbies_n_interests_et"
+                style="@style/editTextStyle"
+                android:layout_marginTop="@dimen/dp20"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:drawableRight="@drawable/hobbies_icon"
+                android:hint="@string/hobbies_interest"
+                android:paddingLeft="@dimen/dp2" />
+
+            <View
+                style="@style/dividerView"
+                android:layout_marginTop="@dimen/dp10" />
+
+            <EditText
+                android:id="@+id/activity_profile_company_name_et"
+                style="@style/editTextStyle"
+                android:layout_marginTop="@dimen/dp20"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:drawableRight="@drawable/company_icon"
+                android:hint="@string/company_name"
+                android:paddingLeft="@dimen/dp2" />
+
+            <View
+                style="@style/dividerView"
+                android:layout_marginTop="@dimen/dp10" />
+
+            <EditText
+                android:id="@+id/activity_profile_designation_et"
+                style="@style/editTextStyle"
+                android:layout_marginTop="@dimen/dp20"
+                android:drawableRight="@drawable/designation_icon"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:hint="@string/designation"
+                android:paddingLeft="@dimen/dp2" />
+
+            <View
+                style="@style/dividerView"
+                android:layout_marginTop="@dimen/dp10" />
+
+            <EditText
+                android:id="@+id/activity_profile_website_link_et"
+                style="@style/editTextStyle"
+                android:layout_marginTop="@dimen/dp20"
+                android:drawableRight="@drawable/add"
+                android:focusable="false"
+                android:hint="@string/website_link"
+                android:paddingLeft="@dimen/dp2" />
+
+            <View
+                style="@style/dividerView"
+                android:layout_marginTop="@dimen/dp10" />
+
+
+            <LinearLayout
+                android:id="@+id/activity_profile_website_link_lyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <Button
+                android:id="@+id/activity_profile_next_step_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp10"
+                android:textSize="@dimen/text_size_16sp"
+                android:background="@drawable/round_corner_btn"
+                android:text="@string/next_step"
+                android:textAppearance="@style/TextAppearance.Lato.Bold"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

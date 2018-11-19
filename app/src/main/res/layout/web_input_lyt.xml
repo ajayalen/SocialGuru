@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/dp10"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <EditText
+            android:id="@+id/input_et"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:inputType="textWebEmailAddress"
+            android:imeOptions="normal"
+            android:background="@null"
+            android:textSize="@dimen/text_size_16sp"
+            android:textAppearance="@style/TextAppearance.Lato.Regular"
+            android:textColorHint="@color/color_gray_light"
+            android:hint="@string/enter_website" />
+
+
+        <ImageView
+            android:id="@+id/web_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/delete" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/web_divider"
+        style="@style/dividerView"
+        android:layout_height="@dimen/dp1"
+        android:layout_marginTop="@dimen/dp10" />
+
+</LinearLayout>

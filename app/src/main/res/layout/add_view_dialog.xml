@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:id="@+id/main_container"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp20"
+        android:background="@drawable/round_corner_dialog"
+        android:orientation="vertical">
+    <ImageView
+        android:id="@+id/dialog_image"
+        android:layout_width="@dimen/dp60"
+        android:layout_height="@dimen/dp60"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/dp25" />
+
+    <TextView
+        android:id="@+id/dialog_add_text_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp25"
+        android:textAppearance="@style/TextAppearance.Lato.Regular"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_14sp" />
+
+    <EditText
+        android:id="@+id/dialog_add_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp25"
+        android:background="@null"
+        android:maxLength="14"
+        android:inputType="textPersonName"
+        android:padding="@dimen/dp10"
+        android:textAppearance="@style/TextAppearance.Lato.Regular"
+        android:textColor="@color/color_gray_dark"
+        android:textSize="@dimen/text_size_16sp" />
+
+    <View
+        style="@style/dividerView"
+        android:layout_marginLeft="@dimen/dp20" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp30"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dialog_cancel_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:background="@drawable/round_corner_bottom_left_dialog"
+            android:text="@string/cancel"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/dialog_done_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/round_corner_bottom_right_dialog"
+            android:text="@string/done"
+            android:textColor="@color/white" />
+    </LinearLayout>
+        </LinearLayout>
+</LinearLayout>

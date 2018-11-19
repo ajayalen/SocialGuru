@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/splash"
+    tools:context="com.socialnetwork.activities.SplashActivity"
+    tools:ignore="Overdraw">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp65"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="5"
+        android:shadowColor="@color/grey_4f4f4f"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textAppearance="@style/TextAppearance.Neon"
+        android:textSize="@dimen/text_size_30sp" />
+
+
+    <TextView
+        android:id="@+id/login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp100"
+        android:background="@drawable/round_corner_btn"
+        android:text="@string/login_label"
+        android:textColor="@color/white"
+        android:textAppearance="@style/TextAppearance.Lato.Bold"
+        android:textSize="@dimen/text_size_16sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

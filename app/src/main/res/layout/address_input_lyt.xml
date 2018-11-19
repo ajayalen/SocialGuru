@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/address_single_tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:layout_marginTop="@dimen/dp10"
+        android:hint="@string/tag_name"
+        android:paddingRight="@dimen/dp5"
+        android:textSize="@dimen/text_size_16sp"
+        android:textAppearance="@style/TextAppearance.Lato.Regular"
+        android:imeOptions="normal"
+        android:inputType="text"
+        android:singleLine="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/dp15"
+        >
+
+        <View
+            style="@style/dividerView"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp1"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/web_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/delete" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/address_single_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="@string/address"
+        android:imeOptions="normal"
+        android:inputType="text"
+        android:textAppearance="@style/TextAppearance.Lato.Regular"
+        android:textSize="@dimen/text_size_16sp"
+        android:singleLine="true" />
+
+    <View
+        android:id="@+id/address_divider"
+        style="@style/dividerView"
+        android:layout_height="@dimen/dp1"
+        android:layout_marginTop="@dimen/dp10" />
+
+</LinearLayout>

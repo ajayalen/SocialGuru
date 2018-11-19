@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.socialnetwork.activities.LinkedSocialProfileActivity"
+    tools:ignore="Overdraw">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/activity_linked_social_platform_name"
+                style="@style/light_background_text"
+                android:text="@string/linked_account" />
+
+            <LinearLayout
+                android:id="@+id/activity_linked_social_profile_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp20">
+
+                <ImageView
+                    android:id="@+id/activity_linked_social_profile_iv"
+                    android:layout_width="@dimen/dp90"
+                    android:layout_height="@dimen/dp90"
+                    android:src="@drawable/default_profile_image_holder"
+                    android:padding="@dimen/dp2" />
+
+                <TextView
+                    android:id="@+id/linked_social_profile_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:textAppearance="@style/TextAppearance.Lato.Regular"
+                    android:textSize="@dimen/text_size_18sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/add_more_profile_tv"
+                style="@style/light_background_text"
+                android:drawableRight="@drawable/add_more_profile"
+                android:text="@string/add_more_profiles" />
+
+            <LinearLayout
+                android:id="@+id/add_more_profile_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp25"
+                android:layout_marginRight="@dimen/dp25"
+                android:orientation="vertical">
+                <!--<include layout="@layout/web_input_lyt"/>-->
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dp10"
+                android:paddingTop="@dimen/dp10">
+
+                <Button
+                    android:id="@+id/activity_linked_social_profile_save_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/round_corner_btn"
+                    android:text="@string/save_txt"
+                    android:textAppearance="@style/TextAppearance.Lato.Bold"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "270259070948",
+    "project_id": "lyrical-flame-143010"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:270259070948:android:0b6e46dded0b582d",
+        "android_client_info": {
+          "package_name": "com.socialnetwork"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "270259070948-g5s7k94o2k1bni4i5m2ntvt95tvq5p94.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.socialnetwork",
+            "certificate_hash": "91E3297D4D3903814770264535C5F6726E259CFE"
+          }
+        }
+      ],
+      "api_key": [{ "current_key": "" }],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

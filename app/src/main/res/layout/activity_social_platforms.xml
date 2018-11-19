@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/social"
+    android:orientation="vertical"
+    android:id="@+id/main_container"
+    tools:context="com.socialnetwork.activities.SocialPlatformsActivity"
+    tools:ignore="Overdraw">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:textAppearance="@style/TextAppearance.Lato.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/dp30"
+            android:layout_marginTop="@dimen/dp25"
+            android:text="@string/social_label"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_35sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/fb_frame"
+                style="@style/social_icons_bg">
+
+
+                <TextView
+                    style="@style/social_icons_text_bg"
+                    android:drawableLeft="@drawable/social_icon_fb"
+                    android:drawableStart="@drawable/social_icon_fb"
+                    android:text="@string/facebook" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pinterest_frame"
+                style="@style/social_icons_bg"
+                android:layout_marginLeft="@dimen/dp15">
+
+
+                <TextView
+                    style="@style/social_icons_text_bg"
+                    android:drawableLeft="@drawable/social_icon_pinterest"
+                    android:drawableStart="@drawable/social_icon_pinterest"
+                    android:text="@string/pinterest" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+
+
+            <LinearLayout
+                android:id="@+id/twitter_frame"
+                style="@style/social_icons_bg">
+
+
+                <TextView
+                    style="@style/social_icons_text_bg"
+                    android:drawableLeft="@drawable/social_icon_twitter"
+                    android:drawableStart="@drawable/social_icon_twitter"
+                    android:text="@string/twitter" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linkedin_frame"
+                style="@style/social_icons_bg">
+
+
+                <TextView
+                    style="@style/social_icons_text_bg"
+                    android:drawableLeft="@drawable/social_icon_linkedir"
+                    android:drawableStart="@drawable/social_icon_linkedir"
+                    android:text="@string/linkedin" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/google_frame"
+                style="@style/social_icons_bg">
+
+
+
+                <TextView
+                    style="@style/social_icons_text_bg"
+                    android:drawableLeft="@drawable/social_icon_googleplus"
+                    android:drawableStart="@drawable/social_icon_googleplus"
+                    android:text="@string/google" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tumblr_frame"
+                style="@style/social_icons_bg">
+
+                <TextView
+                    style="@style/social_icons_text_bg"
+                    android:drawableLeft="@drawable/social_icon_tumblr"
+                    android:drawableStart="@drawable/social_icon_tumblr"
+                    android:text="@string/tumblr" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+
+
+            <LinearLayout
+                android:id="@+id/instagram_frame"
+                style="@style/social_icons_bg">
+
+
+                <TextView
+                    style="@style/social_icons_text_bg"
+                    android:drawableLeft="@drawable/social_icon_instagram"
+                    android:drawableStart="@drawable/social_icon_instagram"
+                    android:text="@string/instagram" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/youtube_frame"
+                style="@style/social_icons_bg">
+
+
+
+                <TextView
+                    style="@style/social_icons_text_bg"
+                    android:drawableLeft="@drawable/social_icon_youtube"
+                    android:drawableStart="@drawable/social_icon_youtube"
+                    android:text="@string/youtube" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/flickr_frame"
+                style="@style/social_icons_bg">
+
+
+                <TextView
+                    style="@style/social_icons_text_bg"
+                    android:drawableLeft="@drawable/social_icon_flickr"
+                    android:drawableStart="@drawable/social_icon_flickr"
+                    android:text="@string/flickr" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/reddit_frame"
+                style="@style/social_icons_bg">
+
+
+                <TextView
+                    style="@style/social_icons_text_bg"
+                    android:drawableLeft="@drawable/social_icon_reddit"
+                    android:drawableStart="@drawable/social_icon_reddit"
+                    android:text="@string/reddit" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal">
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:scrollbars="none"
+            >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/activity_skype_platform_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp10"
+                    android:drawableTop="@drawable/skype_unselected"
+                    android:gravity="center"
+                    android:text="@string/skype_txt"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/activity_vine_platform_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp10"
+                    android:drawableTop="@drawable/vine_unselected"
+                    android:gravity="center"
+                    android:text="@string/vine_txt"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/activity_quora_platform_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp10"
+                    android:drawableTop="@drawable/quora_unselected"
+                    android:gravity="center"
+                    android:text="@string/quora_txt"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/activity_snapchat_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp10"
+                    android:drawableTop="@drawable/snapchat_unselected"
+                    android:gravity="center"
+                    android:text="@string/snapchat_txt"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/add_social_platform_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical">
+
+            </LinearLayout>
+</LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/social_skip_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:background="@color/yellow"
+            android:text="@string/skip"
+            android:textAppearance="@style/TextAppearance.Lato.Bold"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/social_next_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@color/colorPrimary"
+            android:text="@string/next"
+            android:textAppearance="@style/TextAppearance.Lato.Bold"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,136 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--customize app dialogs here-->
+    <style name="AppDialog.Title" parent="Base.DialogWindowTitle.AppCompat">
+        <item name="fontPath">fonts/Mark Simonson - Proxima Nova Bold.otf</item>
+    </style>
+
+    <style name="AppDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowTitleStyle">@style/AppDialog.Title</item>
+        <item name="colorAccent">@color/text_color_colorPrimary</item>
+
+        <!-- Used for the title and text -->
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <!-- Used for the background -->
+        <!-- <item name="android:background">@color/white</item>-->
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <!--create your custom font appearance here-->
+    <style name="TextAppearance.Lato.Bold" parent="TextAppearance.AppCompat">
+        <item name="fontPath">fonts/Lato-Bold.ttf</item>
+    </style>
+
+    <style name="TextAppearance.Lato.Light" parent="TextAppearance.AppCompat">
+        <item name="fontPath">fonts/Lato-Light.ttf</item>
+    </style>
+
+
+    <style name="TextAppearance.Lato.Regular" parent="TextAppearance.AppCompat">
+        <item name="fontPath">fonts/Lato-Regular.ttf</item>
+    </style>
+
+    <style name="TextAppearance.Lato.SemiBold" parent="TextAppearance.AppCompat">
+        <item name="fontPath">fonts/Lato-Semibold.ttf</item>
+    </style>
+
+    <style name="TextAppearance.Lato.Black" parent="TextAppearance.AppCompat">
+        <item name="fontPath">fonts/Lato-Black.ttf</item>
+    </style>
+
+    <style name="TextAppearance.Lato.Heavy" parent="TextAppearance.AppCompat">
+        <item name="fontPath">fonts/Lato-Heavy.ttf</item>
+    </style>
+
+    <style name="TextAppearance.Lato.Medium" parent="TextAppearance.AppCompat">
+        <item name="fontPath">fonts/Lato-Medium.ttf</item>
+    </style>
+
+    <style name="TextAppearance.Neon" parent="TextAppearance.AppCompat">
+        <item name="fontPath">fonts/Neon.ttf</item>
+    </style>
+
+
+    <!--editText style-->
+    <style name="editTextStyle" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColorHint">@color/color_gray_light</item>
+        <item name="android:textColor">@color/color_gray_dark</item>
+        <item name="android:textSize">@dimen/text_size_16sp</item>
+        <item name="android:background">@null</item>
+        <item name="android:textAppearance">@style/TextAppearance.Lato.Regular</item>
+    </style>
+    <!--editText style-->
+    <style name="dividerView" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp1</item>
+        <item name="android:background">@color/color_divider</item>
+    </style>
+    <!--light background text style-->
+    <style name="light_background_text" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/color_background_light</item>
+        <item name="android:paddingLeft">@dimen/dp20</item>
+        <item name="android:paddingTop">@dimen/dp12</item>
+        <item name="android:paddingBottom">@dimen/dp12</item>
+        <item name="android:paddingRight">@dimen/dp20</item>
+        <item name="android:textSize">@dimen/text_size_18sp</item>
+        <item name="android:textColor">@color/color_gray_dark</item>
+        <item name="android:textAppearance">@style/TextAppearance.Lato.Regular</item>
+    </style>
+    <!--user mail/contact detail text style-->
+    <style name="user_detail_social_text" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_16sp</item>
+        <item name="android:textColor">@color/color_gray_dark</item>
+        <item name="android:textAppearance">@style/TextAppearance.Lato.Regular</item>
+    </style>
+
+
+    <style name="social_icons_bg" parent="AppTheme">
+
+        <item name="android:layout_width">@dimen/dp130</item>
+        <item name="android:layout_height">@dimen/dp40</item>
+        <item name="android:layout_margin">@dimen/dp5</item>
+        <item name="android:textColor">@color/color_gray_dark</item>
+        <item name="android:textSize">@dimen/text_size_16sp</item>
+        <item name="android:background">@drawable/social_rounder_btn</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/dp12</item>
+        <item name="android:paddingBottom">@dimen/dp5</item>
+        <item name="android:paddingRight">@dimen/dp12</item>
+        <item name="android:paddingTop">@dimen/dp5</item>
+
+
+    </style>
+
+    <style name="social_icons_text_bg" parent="AppTheme">
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:drawablePadding">@dimen/dp5</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_16sp</item>
+
+
+    </style>
+
+</resources>

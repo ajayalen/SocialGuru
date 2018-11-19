@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/verification_bg"
+    android:orientation="vertical"
+    tools:context="com.socialnetwork.activities.EnterMobileActivity"
+    tools:ignore="Overdraw">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/dp30"
+                android:text="@string/enter_no_label"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_18sp" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="@dimen/dp240"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/phone_input_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp3">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp10">
+
+
+                    <TextView
+                        android:id="@+id/enter_plus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="@string/plus"
+                        android:textSize="@dimen/text_size_20sp" />
+
+                    <EditText
+                        android:id="@+id/enter_phone_country_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:minWidth="@dimen/dp10"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_20sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/dp1"
+                    android:layout_height="@dimen/dp30"
+                    android:background="@color/white" />
+
+        <EditText
+            android:id="@+id/enter_phone_number"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_weight="1"
+            android:background="@null"
+            android:layout_gravity="center"
+            android:gravity="left|center_vertical"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLength="13"
+            android:singleLine="true"
+            android:paddingLeft="@dimen/dp10"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_20sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/dp20"
+                android:gravity="center"
+                android:text="@string/enter_phone_msg"
+                android:textAppearance="@style/TextAppearance.Lato.Light"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_16sp" />
+
+            <TextView
+                android:id="@+id/enter_mobile_login_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp25"
+                android:background="@drawable/round_corner_btn"
+                android:text="@string/continue_label"
+                android:textAppearance="@style/TextAppearance.Lato.Bold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_16sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

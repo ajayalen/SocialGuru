@@ -1,0 +1,182 @@
+<resources>
+    <string name="app_name">Social Network</string>
+    <string name="app_id_gcm">823400654799</string>
+
+    <string name="msg_empty">Please enter </string>
+    <string name="please_wait">Please Wait</string>
+    <string name="no_network_msg">Please check your internet connection &amp; try again</string>
+    <string name="retry">Retry</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="server_error">Something went wrong, please try again.</string>
+    <string name="text_yes">Yes</string>
+    <string name="cancel">Cancel</string>
+    <string name="text_no">No</string>
+    <string name="btn_ok">OK</string>
+    <string name="grant_access">You need to grant access to</string>
+
+
+    <string name="lbl_drawer_open">Drawer Opened</string>
+    <string name="lbl_drawer_close">Drawer Close</string>
+
+
+    <string name="login_label">LOGIN</string>
+    <string name="social_papa_setup_label">Social Papa Setup</string>
+    <string name="enter_no_label">Enter your phone number</string>
+    <string name="enter_phone_msg">Social Papa will send a One Time Password\nto verify your phone number.</string>
+    <string name="continue_label">CONTINUE</string>
+
+    <!--User profile screen strings-->
+    <string name="user_name">Username</string>
+    <string name="name">Name</string>
+    <string name="age">Age</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="email_address">Email Address</string>
+    <string name="write_about_yourself">Write About Yourself</string>
+    <string name="hobbies_interest">Hobbies and Interests</string>
+    <string name="company_name">Company Name</string>
+    <string name="designation">Designation</string>
+    <string name="next_step">NEXT STEP</string>
+    <string name="website_link">Website Links</string>
+    <string name="privacy_txt">Privacy</string>
+    <string name="add_website_link">Add Website Link</string>
+
+
+    <string name="phone_no_label">Phone Number Verification</string>
+    <string name="correct_mobile_label">Is this your correct mobile number?</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_edit">EDIT</string>
+
+    <string name="enter_code_label">Enter your code below</string>
+    <string name="sms_msg">You should be getting an sms very shortly.\nThanks for your patience </string>
+    <string name="verify">VERIFY</string>
+    <string name="resend_confirmation">Resend Confirmation Code</string>
+
+
+    <string name="user_details_label">User Details</string>
+    <string name="social_label">SOCIAL</string>
+    <string name="skype_txt">Skype</string>
+    <string name="vine_txt">Vine</string>
+    <string name="quora_txt">Quora</string>
+    <string name="snapchat_txt">SnapChat</string>
+
+    <!--Linked Social profile screen strings-->
+    <string name="linked_account">Linked Account</string>
+    <string name="add_more_profiles">Add More Profiles</string>
+    <string name="add_profile_name">Add Profile Name</string>
+    <string name="save_txt">SAVE</string>
+
+    <!-- User mail detail screen strings-->
+    <string name="mail_txt">Mail</string>
+    <string name="gmail_txt">Gmail</string>
+    <string name="yahoo_txt">Yahoo</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="tap_any_icon_for_mail">Tap any of the icon to fill your mail details.</string>
+
+    <!-- User contacts detail screen strings-->
+    <string name="contacts_txt">Contacts</string>
+    <string name="whats_app">Whatsapp</string>
+    <string name="viber_txt">Viber</string>
+    <string name="telegram_txt">Telegram</string>
+    <string name="hike_txt">Hike</string>
+    <string name="calls_txt">Calls</string>
+    <string name="tap_any_icon_for_contacts">Tap any of the icon to fill your contact details.</string>
+
+    <!-- User address detail screen strings-->
+    <string name="address">Address</string>
+    <string name="add_address">Add Address</string>
+    <string name="tag_name">Tag Name</string>
+    <string name="save_details">SAVE DETAILS</string>
+    <string name="details_saved_successfully">All your details have been saved successfully.</string>
+
+    <!-- image picker screen strings-->
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="profile_details_label">Profile Details</string>
+
+    <!-- custom dialog screen strings-->
+    <string name="detail">Detail</string>
+    <string name="done">DONE</string>
+    <string name="add_new_mail">Add New Mail</string>
+    <string name="add_new_social_platform">Add New Social Platform</string>
+    <string name="add_more_contacts">Add More Contacts</string>
+    <string name="number">Number</string>
+    <string name="enter_details">Enter Details</string>
+    <string name="enter_number">Enter Number</string>
+
+    <string name="fb_label">Facebook</string>
+    <string name="pin_label">Pinterest</string>
+    <string name="twitter_label">Twitter</string>
+    <string name="linked_in">Linkedin</string>
+    <string name="gplus_label">Google+</string>
+    <string name="tum_label">Tumblr</string>
+    <string name="insta_label">Instagram</string>
+    <string name="youtube_label">Youtube</string>
+    <string name="flickr_label">Flickr</string>
+    <string name="reddit_label">Reddit</string>
+
+
+    <string-array name="social_array">
+        <item>@string/fb_label</item>
+        <item>@string/pin_label</item>
+        <item>@string/twitter_label</item>
+        <item>@string/linked_in</item>
+        <item>@string/gplus_label</item>
+        <item>@string/tum_label</item>
+        <item>@string/insta_label</item>
+        <item>@string/youtube_label</item>
+        <item>@string/flickr_label</item>
+        <item>@string/reddit_label</item>
+    </string-array>
+
+
+    <string-array name="cards_default">
+        <item>@string/family_label</item>
+        <item>@string/business_label</item>
+        <item>@string/friends_label</item>
+    </string-array>
+
+
+    <string name="family_label">Family</string>
+    <string name="business_label">Business</string>
+    <string name="friends_label">Friends</string>
+
+    <!-- phone number screen validation strings-->
+    <string name="code_empty_txt">Country code is required.</string>
+    <string name="number_empty_txt">Phone number is required.</string>
+    <string name="number_valid_txt">Phone number must be of 8-13 digits.</string>
+    <string name="platform_name_empty_txt">Please enter the platform name</string>
+    <string name="enter_valid_username">Please enter valid Username</string>
+    <string name="enter_valid_country_code">Please enter Country code</string>
+    <string name="delete_confirmation_txt">Are you sure want to delete this?</string>
+    <string name="are_you_sure_txt">Are you sure want to delete </string>
+    <string name="fill_otp">Please fill otp</string>
+
+    <!-- facebook integration strings-->
+    <string name="facebook_app_id">944810985665477</string>
+    <string name="title_activity_request_detail">RequestDetailActivity</string>
+    <string name="delete_label">Delete</string>
+    <string name="press_back_button_to_exit">Press back button again to exit</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+
+    <string name="business_card_label">Business Cards</string>
+    <string name="logout">LOGOUT</string>
+    <string name="enter_website">Enter Website</string>
+    <string name="facebook">Facebook</string>
+    <string name="plus">+</string>
+    <string name="pinterest">Pinterest</string>
+    <string name="twitter">Twitter</string>
+    <string name="linkedin">Linkedin</string>
+    <string name="google">Google+</string>
+    <string name="tumblr">Tumblr</string>
+    <string name="instagram">Instagram</string>
+    <string name="youtube">Youtube</string>
+    <string name="flickr">Flickr</string>
+    <string name="reddit">Reddit</string>
+
+</resources>
